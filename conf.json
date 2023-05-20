@@ -1,0 +1,38 @@
+{
+  "type": "no_sampling_policy",
+  "algo_related": {
+    "clip_ratio": 0.1,
+    "do_value_clip": false,
+    "entropy_coef": 0.001,
+    "teaching_coef": 0.001,
+    "teaching_half_life": Infinity,
+    "type": "torch_lux_multi_task_ppo_algorithm",
+    "value_coef": 0.5
+  },
+  "model_related": {
+    "enable_amp": false,
+    "init_from": "policy_pool/saved_model/lux2-qimai-v25-19/policy_20230311_151117.922859_step151040_name_default/model.pt",
+    "model_param": {
+      "action_emb_dim": 6,
+      "action_queue_size": 20,
+      "actor_head": "full",
+      "all_channel": 64,
+      "amount_distribution": "categorical",
+      "global_emb_dim": 10,
+      "global_feature_dims": 32,
+      "map_channel": 30,
+      "n_res_blocks": 4,
+      "spawn_distribution": "beta"
+    },
+    "random_init_critic": false,
+    "type": "torch_lux_model"
+  },
+  "training_context_kwargs": {
+    "step_no": 5461760,
+    "lr": 0.0001,
+    "clip_norm": 0.5,
+    "save_policy_gap": 256,
+    "max_step": 100000000000
+  },
+  "sig": "policy_20230329_185147.598151_step5461760_name_default"
+}
