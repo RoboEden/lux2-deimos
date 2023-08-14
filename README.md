@@ -4,7 +4,7 @@ Open-sourced our code for Kaggle [Lux S2](https://www.kaggle.com/competitions/lu
 
 ### Requirements
 ```
-luxai_s2
+luxai_s2==2.1.4
 dm-tree
 python>= 3.7
 torch>= 1.7.1
